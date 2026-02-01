@@ -1350,14 +1350,15 @@ void SxPW::write (SxBinIO &io) const
                       (*this)(iSpin,ik).getSize (), nGk(ik) * nPerK(ik) * nComp);
 
             for (i=0; i < nPerK (ik); i++)  {
+               /*
                io.writeVec (psiVarName,
                             /* real psi only upon real writing
                                to avoid superfluous io when waves are
                                in scratch file on disk */
-                            (io.ncMode == SxBinIO::WRITE_DATA)
+                            /*(io.ncMode == SxBinIO::WRITE_DATA)
                                ? (*this)(i, iSpin, ik)
                                : SxVecRef<PrecCoeffG> (),
-                            coeffDimName, offset);
+                            coeffDimName, offset); */
                offset += nGk(ik) * nComp;
             }
          }

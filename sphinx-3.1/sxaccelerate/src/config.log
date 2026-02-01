@@ -30,8 +30,8 @@ Kernel configured for up to 12 processors.
 Processor type: arm64e (ARM64E)
 Processors active: 0 1 2 3 4 5 6 7 8 9 10 11
 Primary memory available: 32.00 gigabytes
-Default processor set: 663 tasks, 4248 threads, 12 processors
-Load average: 11.72, Mach factor: 4.87
+Default processor set: 664 tasks, 4230 threads, 12 processors
+Load average: 5.80, Mach factor: 6.38
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -829,7 +829,7 @@ configure:13057: checking for sincos
 configure:13057: clang -o conftest -Wall -O3 -march=native -fpermissive -flax-vector-conversions -pipe -Wno-variadic-macros -DNDEBUG -D_REENTRANT   conftest.c  -framework CoreFoundation -lm >&5
 Undefined symbols for architecture x86_64:
   "_sincos", referenced from:
-      _main in conftest-0e2bb6.o
+      _main in conftest-3f2558.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13057: $? = 1
@@ -2212,74 +2212,108 @@ config.status:1401: creating system/Doxyfile
 config.status:1401: creating gpu/Makefile
 config.status:1401: creating system/sxmake
 config.status:1401: creating util/SxUnixConfig.h
+config.status:1582: util/SxUnixConfig.h is unchanged
 config.status:1630: executing depfiles commands
 config.status:1707: cd nonstd       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd util       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd util/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd util/tests       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd graph       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd math       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd math/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd math/tests       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd math/benchmarks       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd ipc       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd ipc/tests       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd ipc/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd ipc/examples/plugins       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 /Users/fonari/src/sphinx-mac/sphinx-3.1/sxaccelerate/src/system/make.am.apps:56: warning: overriding commands for target `distclean'
-/var/folders/h8/y948pzrj75s93w8h3wp77wkw0000gq/T/GmvuCGCb:826: warning: ignoring old commands for target `distclean'
+/var/folders/h8/y948pzrj75s93w8h3wp77wkw0000gq/T/GmIEqDy7:826: warning: ignoring old commands for target `distclean'
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd fs       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd fs/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd fs/tests       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd parserkit       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd parserkit/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd parserkit/examples/01_hello       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd parserkit/examples/02_stateful_scanner       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd parserkit/examples/03_unicode       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd parserkit/examples/04_include_files       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd parserkit/examples/05_parser_stack       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd parserkit/examples/06_schema       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd json       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd json/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd io       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd io/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd io/examples/plugins       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd mpi       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd mpi/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd apps/libexec       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1707: cd apps/tests/bin       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for `am--depfiles'.
 config.status:1712: $? = 0
 config.status:1630: executing libtool commands
 config.status:1630: executing chmodwarn commands
