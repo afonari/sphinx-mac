@@ -1,3 +1,0 @@
-matrix {type = "list";}
-frequencies {type = "list"; optional;}
-eigenvalues {type = "list"; optional;}

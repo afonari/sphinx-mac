@@ -1,6 +1,0 @@
-	printDispersion { type = "group"; optional;
-		nKPoints { type = "int"; }
-		file { type = "string";}
-		interpolation { type = "string";}
-	}
-

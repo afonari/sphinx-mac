@@ -1,3 +1,0 @@
-materialMap  {type="group"; optional; minItems=1;
-   asciiFile {type="string"; optional;}
-}               

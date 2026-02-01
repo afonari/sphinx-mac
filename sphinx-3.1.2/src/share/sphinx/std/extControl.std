@@ -1,9 +1,0 @@
-extControl { type = "group"; optional; nItems=1;
-
-   bornOppenheimer { type="group";
-      include <std/elmin.std>;
-      id { type="string"; optional; }
-   }
-   noForces { type="flag"; optional; }
-}
-
