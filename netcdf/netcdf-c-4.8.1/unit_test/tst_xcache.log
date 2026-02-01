@@ -1,0 +1,6 @@
+insert:
+	insert:	0.000025 sec avg=6250.00 nsec
+read:
+	read:	0.000001 sec avg=250.00 nsec
+touch: passed
+PASS tst_xcache (exit status: 0)

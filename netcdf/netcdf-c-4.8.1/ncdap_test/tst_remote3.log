@@ -1,0 +1,36 @@
+*** Testing DAP to netCDF-3 translation using remote server 
+        Base URL: https://remotetest.unidata.ucar.edu/dts
+        Client Parameters: [log][netcdf3]
+        Caching: on
+    Note: The remote tests may be slow or even fail if the server is overloaded
+*** Testing: test.01 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.01
+*** Testing: test.02 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.02
+*** Testing: test.04 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.04
+*** Testing: test.05 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.05
+*** Testing: test.07a ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.07a
+*** Testing: test.07 ; url=https://remotetest.unidata.ucar.edu/dts/test.07
+*** Testing: test.21 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.21
+*** Testing: test.50 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.50
+*** Testing: test.53 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.53
+*** Testing: test.55 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.55
+*** Testing: test.56 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.56
+*** Testing: test.57 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.57
+*** Testing: test.66 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.66
+*** Testing: test.67 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.67
+41c41
+<     0.589788025031098, 0.581683089463883, 0.573519986072457, 
+---
+>     0.589788025031098, 0.581683089463884, 0.573519986072457, 
+*** FAIL:  test.67
+*** Testing: test.68 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.68
+*** Testing: test.69 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.69
+*** Testing: test.01.1 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.01?f64
+*** Testing: test.02.1 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.02?b[1:2:10]
+*** Testing: test.03.1 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.03?i32[0:1][1:2][0:2]
+*** Testing: test.04.1 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.04?types.i32
+*** Testing: test.05.1 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.05?types.floats.f32
+*** Testing: test.07.1 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.07?person.age
+*** Testing: test.07.3 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.07?person
+*** Testing: test.07.4 ; url=[cache][prefetch]https://remotetest.unidata.ucar.edu/dts/test.07?types.f32
+*** FAILED: 23/24 ; 0 expected failures ; 1 unexpected failures
+FAIL tst_remote3.sh (exit status: 1)

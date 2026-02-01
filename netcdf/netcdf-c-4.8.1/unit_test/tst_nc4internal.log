@@ -1,0 +1,10 @@
+
+*** Testing netcdf nc4internal functions.
+Testing adding new file to nc4internal file lists with nc4_file_list_add()...ok.
+Testing adding new file to nc4internal file lists with nc4_nc4f_list_add()...ok.
+Testing adding new var to nc4internal file...ok.
+Testing adding new dim to nc4internal file...ok.
+Testing adding new type to nc4internal file...ok.
+Testing changing ncid...ok.
+*** Tests successful!
+PASS tst_nc4internal (exit status: 0)

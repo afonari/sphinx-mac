@@ -1,0 +1,17 @@
+
+Creating Unicode String Directory 海
+drwxr-xr-x  2 fonari  staff  64 Jan 31 19:33 海
+*** Generating netcdf-3 binary file 海/tst_utf.nc...
+*** Accessing binary file 海/tst_utf.nc...
+netcdf tst_utf {
+dimensions:
+	xā = 2 ;
+	㼿y = 2 ;
+variables:
+	int 􍐪(xā, 㼿y) ;
+
+// global attributes:
+		:Gā = "ā㼿y􍐪" ;
+}
+Test Passed. Cleaning up.
+PASS test_unicode_directory.sh (exit status: 0)

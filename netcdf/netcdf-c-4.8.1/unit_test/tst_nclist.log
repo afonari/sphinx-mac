@@ -1,0 +1,7 @@
+
+*** Testing netcdf internal NC list functions.
+Testing NC list functions with no open files...ok.
+Testing adding to NC list...ok.
+Testing moving in NC list (needed for PIO)...ok.
+*** Tests successful!
+PASS tst_nclist (exit status: 0)

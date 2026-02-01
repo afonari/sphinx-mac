@@ -1,0 +1,3 @@
+test_partvar: url=https://remotetest.unidata.ucar.edu/dts/ingrid
+*** PASS
+PASS test_partvar (exit status: 0)

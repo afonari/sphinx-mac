@@ -1,0 +1,4 @@
+topsrcdir=/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1
+test_vara: url=file:///Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/testdata3/test.06
+*** PASS
+PASS test_vara (exit status: 0)

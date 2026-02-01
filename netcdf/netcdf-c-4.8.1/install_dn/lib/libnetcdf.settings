@@ -1,0 +1,47 @@
+# NetCDF C Configuration Summary
+==============================
+
+# General
+-------
+NetCDF Version:		4.8.1
+Dispatch Version:       3
+Configured On:		Sat Jan 31 19:30:23 EST 2026
+Host System:		arm-apple-darwin23.6.0
+Build Directory: 	/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1
+Install Prefix:         /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn
+
+# Compiling Options
+-----------------
+C Compiler:		/Users/fonari/src/2026-2/buildvenv/82fbb9c/bin/clang
+CFLAGS:			 -fno-strict-aliasing
+CPPFLAGS:		
+LDFLAGS:		
+AM_CFLAGS:		
+AM_CPPFLAGS:		
+AM_LDFLAGS:		
+Shared Library:		yes
+Static Library:		yes
+Extra libraries:	-lm -lz -lcurl 
+
+# Features
+--------
+NetCDF-2 API:		yes
+HDF4 Support:		no
+HDF5 Support:		no
+NetCDF-4 API:		yes
+NC-4 Parallel Support:	no
+PnetCDF Support:	no
+DAP2 Support:		yes
+DAP4 Support:		no
+Byte-Range Support:	no
+Diskless Support:	yes
+MMap Support:		no
+JNA Support:		no
+CDF5 Support:		yes
+ERANGE Fill Support:	no
+Relaxed Boundary Check:	yes
+SZIP Support:           no
+SZIP Write Support:     no
+Parallel Filters:       no
+NCZarr Support:		yes
+Multi-Filter Support:	yes

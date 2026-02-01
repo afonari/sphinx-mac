@@ -1,0 +1,5 @@
+
+*** Testing extended file format output.
+Test extended format output for a DAP2  file
+DAP2 mode=00000000
+PASS tst_formatx.sh (exit status: 0)

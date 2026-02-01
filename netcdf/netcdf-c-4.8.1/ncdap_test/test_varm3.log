@@ -1,0 +1,8 @@
+*** Test: varm on URL: https://remotetest.unidata.ucar.edu/thredds/dodsC/testdods/coads_climatology.nc
+*** Testing: stride case 1
+*** Pass: stride case 1
+*** Testing: stride case 2
+*** Pass: stride case 2
+*** Testing: stride case 3
+*** Pass: stride case 3
+PASS test_varm3 (exit status: 0)

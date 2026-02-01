@@ -1,0 +1,32 @@
+
+*** Testing #encode= mechanism
+netcdf dods {
+dimensions:
+	T = 1 ;
+variables:
+	float anomaly(T) ;
+		anomaly:file_missing_value = -999.9f ;
+		anomaly:standard_name = "air_pressure_anomaly" ;
+		anomaly:units = "unitless" ;
+		anomaly:expires = 1772755200 ;
+		anomaly:history = "Indices Tahiti slp c8110 standardized\n",
+			"Indices Tahiti slp c8110 anomaly\n",
+			"Averaged over T2[1981, 2010] minimum 0.0% data present\n",
+			"sqrt [   total ( { Indices Tahiti slp c8110 anomaly } squared )   / 360. ]\n",
+			"  total [ ( Indices Tahiti slp c8110 anomaly ) squared ]   / 360.\n",
+			"Averaged over T2[1981, 2010] minimum 0.0% data present\n",
+			"Averaged over T[Jan 1981, Dec 2010] minimum 0.0% data present\n",
+			"Indices Darwin slp c8110 standardized\n",
+			"Indices Darwin slp c8110 anomaly\n",
+			"Averaged over T2[1981, 2010] minimum 0.0% data present\n",
+			"sqrt [   total ( { Indices Darwin slp c8110 anomaly } squared )   / 360. ]\n",
+			"  total [ ( Indices Darwin slp c8110 anomaly ) squared ]   / 360.\n",
+			"Averaged over T2[1981, 2010] minimum 0.0% data present\n",
+			"Averaged over T[Jan 1981, Dec 2010] minimum 0.0% data present" ;
+		anomaly:long_name = "sea level pressure anomaly" ;
+		anomaly:missing_value = -999.9f ;
+
+// global attributes:
+		:Conventions = "IRIDL" ;
+}
+PASS tst_encode.sh (exit status: 0)

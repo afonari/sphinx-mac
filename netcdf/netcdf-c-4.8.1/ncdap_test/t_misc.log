@@ -1,0 +1,5 @@
+syntax error, unexpected WORD_WORD, expecting SCAN_ATTR or SCAN_DATASET or SCAN_ERROR
+context: <!DOCTYPE^ HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head><title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL was not found on this server.</p></body></html>
+Testing: Misc. Tests url=|https://remotetest.unidata.ucar.edu/dts|
+*** XFail : No trailing slash in url: NetCDF: file not found
+PASS t_misc (exit status: 0)

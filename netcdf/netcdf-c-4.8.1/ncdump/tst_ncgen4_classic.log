@@ -1,0 +1,10 @@
+
+*** Performing diff/cycle tests for classic format: k=1
+*** Testing ncgen with -k1
+*** XFAIL : ref_tst_chardata
+*** PASSED: 16/16 ; 1 expected failures ; 0 unexpected failures
+*** Cycle testing ncgen with -k1
+xfail test: ref_tst_chardata: ignored
+*** PASSED: 20/20 ; 0 unexpected failures; 1 expected failures ignored
+SUCCESS!!
+PASS tst_ncgen4_classic.sh (exit status: 0)

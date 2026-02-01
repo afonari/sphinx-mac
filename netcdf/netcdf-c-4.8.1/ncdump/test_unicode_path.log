@@ -1,0 +1,17 @@
+
+*** Generating netcdf-3 binary file tst_utf8_海.nc ...
+*** Accessing binary file tst_utf8_海.nc ...
+netcdf tst_utf8_海 {
+dimensions:
+	xā = 2 ;
+	㼿y = 2 ;
+variables:
+	int 􍐪(xā, 㼿y) ;
+
+// global attributes:
+		:Gā = "ā㼿y􍐪" ;
+}
+*** Test nccopy  copy_of_tst_utf8_海 ...
+*** compare  with copy_of_tst_utf8_海.cdl
+Test Passed. Cleaning up.
+PASS test_unicode_path.sh (exit status: 0)

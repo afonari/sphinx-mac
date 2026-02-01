@@ -1,0 +1,58 @@
+insert:
+read:
+statistics:
+|directory|=128 nleaves=68 nactive=1000 |leaf|=16 nactive/nleaves=14.7059 load=0.919118]
+	sizeof(directory)=16777216 sizeof(leaves)=2176 total=16779392
+times: N=1000
+	insert:	0.000431 sec avg=431.00 nsec
+	read:	0.000077 sec avg=77.00 nsec
+iterating: 1000
+iterating: |keys|=1000  |matches|=1000
+setdata: 1000
+map parameters: leaflen=16 depth=7 nactive=1000 uid=68 walking=0
+removing: 1000
+removal: final nactive=0
+	removal:	0.000083 sec avg=83.00 nsec
+read:
+statistics:
+|directory|=2048 nleaves=1033 nactive=10000 |leaf|=16 nactive/nleaves=9.68054 load=0.605034]
+	sizeof(directory)=16777216 sizeof(leaves)=33056 total=16810272
+times: N=10000
+	insert:	0.003449 sec avg=344.90 nsec
+	read:	0.000753 sec avg=75.30 nsec
+iterating: 10000
+iterating: |keys|=10000  |matches|=10000
+setdata: 10000
+map parameters: leaflen=16 depth=11 nactive=10000 uid=1033 walking=0
+removing: 10000
+removal: final nactive=0
+	removal:	0.000634 sec avg=63.40 nsec
+read:
+statistics:
+|directory|=32768 nleaves=8208 nactive=100000 |leaf|=16 nactive/nleaves=12.1832 load=0.761452]
+	sizeof(directory)=16777216 sizeof(leaves)=262656 total=17039872
+times: N=100000
+	insert:	0.193285 sec avg=1932.85 nsec
+	read:	0.008167 sec avg=81.67 nsec
+iterating: 100000
+iterating: |keys|=100000  |matches|=100000
+setdata: 100000
+map parameters: leaflen=16 depth=15 nactive=100000 uid=8208 walking=0
+removing: 100000
+removal: final nactive=0
+	removal:	0.007037 sec avg=70.37 nsec
+read:
+statistics:
+|directory|=262144 nleaves=65559 nactive=1000000 |leaf|=16 nactive/nleaves=15.2534 load=0.95334]
+	sizeof(directory)=65536 sizeof(leaves)=2097888 total=2163424
+times: N=1000000
+	insert:	11.563825 sec avg=11563.83 nsec
+	read:	0.096154 sec avg=96.15 nsec
+iterating: 1000000
+iterating: |keys|=1000000  |matches|=1000000
+setdata: 1000000
+map parameters: leaflen=16 depth=18 nactive=1000000 uid=65559 walking=0
+removing: 1000000
+removal: final nactive=0
+	removal:	0.086268 sec avg=86.27 nsec
+PASS tst_exhash (exit status: 0)

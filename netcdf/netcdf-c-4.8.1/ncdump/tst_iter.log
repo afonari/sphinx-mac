@@ -1,0 +1,6 @@
+
+*** Running ncdump nc_iter test.
+*** dumping iter.nc to iter.dmp
+*** reformat iter.dmp
+*** comparing iter.dmp with iter.cdl...
+PASS tst_iter.sh (exit status: 0)

@@ -1,0 +1,3 @@
+*** XFail: /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdump/ncdump [nofillmismatch]file:///Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/testdata3/fillmismatch.nc failed
+*** Pass: /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdump/ncdump file:///Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/testdata3/fillmismatch.nc passed
+PASS tst_fillmismatch.sh (exit status: 0)

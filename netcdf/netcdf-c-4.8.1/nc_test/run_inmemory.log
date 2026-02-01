@@ -1,0 +1,41 @@
+
+*** Testing in-memory operations
+
+*** Testing the inmemory API: netcdf-3.
+
+	***Test open 1: nc_open_mem(): read-only
+
+	***Test open 2: nc_open_memio(): read-only
+	finaldata: size=4220 memory=0x7fc53b015000 original=0x7fc53b015000
+
+	***Test open 3: nc_open_memio(): read-write, copy, no size increase
+	*** Not testable
+
+	***Test open 4: nc_open_memio(): read-write, copy, size increase
+	finaldata: size=36324 memory=0x7fc540088000 original=0x7fc53b015000
+
+	***Test open 5: nc_open_memio(): read-write, locked, extra space
+	finaldata: size=262144 memory=0x7fc540008000 original=0x7fc540008000
+
+	***Test create 1: nc_create_memio(): no initialsize
+	finaldata: size=4220 memory=0x7fc53b016600
+
+	***Test create 2: nc_create_memio(): initialsize; save file
+	finaldata: size=262144 memory=0x7fc540008000
+
+	***Test misc 1: use nc_close on created inmemory file
+	***Pass
+
+	***Test misc 2: use nc_close on opened inmemory file
+	***Pass
+
+	***Test xfail 1: nc_open_mem(): write to read-only
+	***XFail Pass: status=-37 NetCDF: Write to read only
+
+	***Test xfail 2: nc_open_memio(): modify without overallocating
+	***XFail Pass: status=-135 NetCDF: In-memory File operation failed.
+ok.
+*** Tests successful!
+**** Test ncdump of the resulting inmemory data: netcdf-3
+PASS: all inmemory tests
+PASS run_inmemory.sh (exit status: 0)

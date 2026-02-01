@@ -1,0 +1,228 @@
++ testcase /xxx/x/y
++ testcase1 -u /xxx/x/y
++ T=-u
++ P=/xxx/x/y
++ echo -n 'path: -u: |/xxx/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -u -e /xxx/x/y
++ echo '|'
++ testcase1 -c /xxx/x/y
++ T=-c
++ P=/xxx/x/y
++ echo -n 'path: -c: |/xxx/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -c -e /xxx/x/y
++ echo '|'
++ testcase1 -m /xxx/x/y
++ T=-m
++ P=/xxx/x/y
++ echo -n 'path: -m: |/xxx/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -m -e /xxx/x/y
++ echo '|'
++ testcase1 -w /xxx/x/y
++ T=-w
++ P=/xxx/x/y
++ echo -n 'path: -w: |/xxx/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -w -e /xxx/x/y
++ echo '|'
++ testcase d:/x/y
++ testcase1 -u d:/x/y
++ T=-u
++ P=d:/x/y
++ echo -n 'path: -u: |d:/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -u -e d:/x/y
++ echo '|'
++ testcase1 -c d:/x/y
++ T=-c
++ P=d:/x/y
++ echo -n 'path: -c: |d:/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -c -e d:/x/y
++ echo '|'
++ testcase1 -m d:/x/y
++ T=-m
++ P=d:/x/y
++ echo -n 'path: -m: |d:/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -m -e d:/x/y
++ echo '|'
++ testcase1 -w d:/x/y
++ T=-w
++ P=d:/x/y
++ echo -n 'path: -w: |d:/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -w -e d:/x/y
++ echo '|'
++ testcase /cygdrive/d/x/y
++ testcase1 -u /cygdrive/d/x/y
++ T=-u
++ P=/cygdrive/d/x/y
++ echo -n 'path: -u: |/cygdrive/d/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -u -e /cygdrive/d/x/y
++ echo '|'
++ testcase1 -c /cygdrive/d/x/y
++ T=-c
++ P=/cygdrive/d/x/y
++ echo -n 'path: -c: |/cygdrive/d/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -c -e /cygdrive/d/x/y
++ echo '|'
++ testcase1 -m /cygdrive/d/x/y
++ T=-m
++ P=/cygdrive/d/x/y
++ echo -n 'path: -m: |/cygdrive/d/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -m -e /cygdrive/d/x/y
++ echo '|'
++ testcase1 -w /cygdrive/d/x/y
++ T=-w
++ P=/cygdrive/d/x/y
++ echo -n 'path: -w: |/cygdrive/d/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -w -e /cygdrive/d/x/y
++ echo '|'
++ testcase /d/x/y
++ testcase1 -u /d/x/y
++ T=-u
++ P=/d/x/y
++ echo -n 'path: -u: |/d/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -u -e /d/x/y
++ echo '|'
++ testcase1 -c /d/x/y
++ T=-c
++ P=/d/x/y
++ echo -n 'path: -c: |/d/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -c -e /d/x/y
++ echo '|'
++ testcase1 -m /d/x/y
++ T=-m
++ P=/d/x/y
++ echo -n 'path: -m: |/d/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -m -e /d/x/y
++ echo '|'
++ testcase1 -w /d/x/y
++ T=-w
++ P=/d/x/y
++ echo -n 'path: -w: |/d/x/y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -w -e /d/x/y
++ echo '|'
++ testcase /cygdrive/d
++ testcase1 -u /cygdrive/d
++ T=-u
++ P=/cygdrive/d
++ echo -n 'path: -u: |/cygdrive/d| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -u -e /cygdrive/d
++ echo '|'
++ testcase1 -c /cygdrive/d
++ T=-c
++ P=/cygdrive/d
++ echo -n 'path: -c: |/cygdrive/d| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -c -e /cygdrive/d
++ echo '|'
++ testcase1 -m /cygdrive/d
++ T=-m
++ P=/cygdrive/d
++ echo -n 'path: -m: |/cygdrive/d| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -m -e /cygdrive/d
++ echo '|'
++ testcase1 -w /cygdrive/d
++ T=-w
++ P=/cygdrive/d
++ echo -n 'path: -w: |/cygdrive/d| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -w -e /cygdrive/d
++ echo '|'
++ testcase /d
++ testcase1 -u /d
++ T=-u
++ P=/d
++ echo -n 'path: -u: |/d| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -u -e /d
++ echo '|'
++ testcase1 -c /d
++ T=-c
++ P=/d
++ echo -n 'path: -c: |/d| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -c -e /d
++ echo '|'
++ testcase1 -m /d
++ T=-m
++ P=/d
++ echo -n 'path: -m: |/d| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -m -e /d
++ echo '|'
++ testcase1 -w /d
++ T=-w
++ P=/d
++ echo -n 'path: -w: |/d| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -w -e /d
++ echo '|'
++ testcase /cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn
++ testcase1 -u /cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn
++ T=-u
++ P=/cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn
++ echo -n 'path: -u: |/cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -u -e /cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn
++ echo '|'
++ testcase1 -c /cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn
++ T=-c
++ P=/cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn
++ echo -n 'path: -c: |/cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -c -e /cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn
++ echo '|'
++ testcase1 -m /cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn
++ T=-m
++ P=/cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn
++ echo -n 'path: -m: |/cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -m -e /cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn
++ echo '|'
++ testcase1 -w /cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn
++ T=-w
++ P=/cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn
++ echo -n 'path: -w: |/cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -w -e /cygdrive/d/git/netcdf-c/dap4_test/test_anon_dim.2.syn
++ echo '|'
++ testcase 'd:\x\y'
++ testcase1 -u 'd:\x\y'
++ T=-u
++ P='d:\x\y'
++ echo -n 'path: -u: |d:\x\y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -u -e 'd:\x\y'
++ echo '|'
++ testcase1 -c 'd:\x\y'
++ T=-c
++ P='d:\x\y'
++ echo -n 'path: -c: |d:\x\y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -c -e 'd:\x\y'
++ echo '|'
++ testcase1 -m 'd:\x\y'
++ T=-m
++ P='d:\x\y'
++ echo -n 'path: -m: |d:\x\y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -m -e 'd:\x\y'
++ echo '|'
++ testcase1 -w 'd:\x\y'
++ T=-w
++ P='d:\x\y'
++ echo -n 'path: -w: |d:\x\y| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -w -e 'd:\x\y'
++ echo '|'
++ testcase 'd:\x\y w\z'
++ testcase1 -u 'd:\x\y w\z'
++ T=-u
++ P='d:\x\y w\z'
++ echo -n 'path: -u: |d:\x\y w\z| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -u -e 'd:\x\y w\z'
++ echo '|'
++ testcase1 -c 'd:\x\y w\z'
++ T=-c
++ P='d:\x\y w\z'
++ echo -n 'path: -c: |d:\x\y w\z| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -c -e 'd:\x\y w\z'
++ echo '|'
++ testcase1 -m 'd:\x\y w\z'
++ T=-m
++ P='d:\x\y w\z'
++ echo -n 'path: -m: |d:\x\y w\z| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -m -e 'd:\x\y w\z'
++ echo '|'
++ testcase1 -w 'd:\x\y w\z'
++ T=-w
++ P='d:\x\y w\z'
++ echo -n 'path: -w: |d:\x\y w\z| => |'
++ /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/pathcvt -w -e 'd:\x\y w\z'
++ echo '|'
++ diff -w /Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/ref_pathcvt.txt ./tmp_pathcvt.txt
++ exit 0
+PASS testpathcvt.sh (exit status: 0)

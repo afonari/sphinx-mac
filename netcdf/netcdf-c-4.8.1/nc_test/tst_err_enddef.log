@@ -1,0 +1,2 @@
+*** TESTING error code returned from nc__enddef and nc_close .... pass
+PASS tst_err_enddef (exit status: 0)

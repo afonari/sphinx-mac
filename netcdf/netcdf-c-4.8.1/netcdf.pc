@@ -1,0 +1,13 @@
+prefix=/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+ccompiler=clang
+
+Name: netcdf-c
+Description: NetCDF Client Library for C
+URL: http://www.unidata.ucar.edu/netcdf
+Version: 4.8.1
+Libs: -L${libdir} -lnetcdf
+Libs.private: -lm -lz -lcurl 
+Cflags: -I${includedir}

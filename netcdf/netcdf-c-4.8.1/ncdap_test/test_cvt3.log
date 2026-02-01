@@ -1,0 +1,16 @@
+topsrcdir=/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1
+*** Test: var conversions on URL: file:///Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/ncdap_test/testdata3/test.02
+*** testing: ch_data
+*** testing: int8_data
+*** testing: uint8_data
+*** testing: int8toint32_data
+*** testing: int82float32_data
+*** testing: int16_data
+*** testing: int16toint32_data
+*** testing: int162float32_data
+*** testing: int32_data
+*** testing: int32tofloat32_data
+*** testing: int32toilong_data
+*** testing: float32_data
+*** testing: float64_data
+PASS test_cvt3 (exit status: 0)

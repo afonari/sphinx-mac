@@ -1,0 +1,25 @@
+
+*** Testing netcdf format functions.
+*** testing nc_inq_format() and nc_inq_format_extended() with format 1...ok.
+*** testing late fill handling with format 1 writing 0 using def_var_fill 0...ok.
+*** testing late fill handling with format 1 writing 0 using def_var_fill 1...ok.
+*** testing late fill handling with format 1 writing 1 using def_var_fill 0...ok.
+*** testing late fill handling with format 1 writing 1 using def_var_fill 1...ok.
+*** testing handling of null strides with format 1... ok.
+*** testing bad name for nc_open/nc_create with format 1... ok.
+*** testing nc_inq_format() and nc_inq_format_extended() with format 2...ok.
+*** testing late fill handling with format 2 writing 0 using def_var_fill 0...ok.
+*** testing late fill handling with format 2 writing 0 using def_var_fill 1...ok.
+*** testing late fill handling with format 2 writing 1 using def_var_fill 0...ok.
+*** testing late fill handling with format 2 writing 1 using def_var_fill 1...ok.
+*** testing handling of null strides with format 2... ok.
+*** testing bad name for nc_open/nc_create with format 2... ok.
+*** testing nc_inq_format() and nc_inq_format_extended() with format 5...ok.
+*** testing late fill handling with format 5 writing 0 using def_var_fill 0...ok.
+*** testing late fill handling with format 5 writing 0 using def_var_fill 1...ok.
+*** testing late fill handling with format 5 writing 1 using def_var_fill 0...ok.
+*** testing late fill handling with format 5 writing 1 using def_var_fill 1...ok.
+*** testing handling of null strides with format 5... ok.
+*** testing bad name for nc_open/nc_create with format 5... ok.
+*** Tests successful!
+PASS tst_formats (exit status: 0)

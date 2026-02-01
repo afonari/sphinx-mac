@@ -1,0 +1,95 @@
+ 
+********************
+open URL https://remotetest.unidata.ucar.edu/thredds/dodsC/testdods/rtofs.nc
+ 
+ 
+********************
+Read Latitude data w/o strides
+ 
+start[0]=  0 count[0]=850 stride[0]=  1
+start[1]=  0 count[1]=712 stride[1]=  1
+ 
+********************
+Print some of Latitude
+ 
+Latitude[0] = 45.773201
+Latitude[1] = 45.773201
+Latitude[2] = 45.773201
+Latitude[3] = 45.773201
+Latitude[4] = 45.773201
+Latitude[5] = 45.773201
+Latitude[6] = 45.773201
+Latitude[7] = 45.773201
+Latitude[8] = 45.773201
+Latitude[9] = 45.773201
+ 
+Latitude[605189] = 56.748310
+Latitude[605190] = 56.706959
+Latitude[605191] = 56.665577
+Latitude[605192] = 56.624157
+Latitude[605193] = 56.582703
+Latitude[605194] = 56.541218
+Latitude[605195] = 56.499699
+Latitude[605196] = 56.458141
+Latitude[605197] = 56.416553
+Latitude[605198] = 56.374931
+ 
+ 
+********************
+Read Longitude data w/o strides
+ 
+start[0]=  0 count[0]=850 stride[0]=  1
+start[1]=  0 count[1]=712 stride[1]=  1
+ 
+********************
+Print some of Longitude
+ 
+Longitude[0] = -179.119995
+Longitude[1] = -179.040039
+Longitude[2] = -178.959961
+Longitude[3] = -178.880005
+Longitude[4] = -178.800049
+Longitude[5] = -178.719971
+Longitude[6] = -178.640015
+Longitude[7] = -178.560059
+Longitude[8] = -178.479980
+Longitude[9] = -178.400024
+ 
+ 
+Longitude[605189] = -113.005249
+Longitude[605190] = -112.970337
+Longitude[605191] = -112.935425
+Longitude[605192] = -112.900635
+Longitude[605193] = -112.865723
+Longitude[605194] = -112.830933
+Longitude[605195] = -112.796143
+Longitude[605196] = -112.761353
+Longitude[605197] = -112.726562
+Longitude[605198] = -112.691895
+ 
+ 
+********************
+Close and reopen the dataset
+ 
+********************
+Read a subset of Latitude data with strides
+ 
+start[0]=250 count[0]=5 stride[0]=2
+start[1]=704 count[1]=2 stride[1]=4
+status = 0
+ 
+********************
+Print  values read. They should all be 50.xxxx 
+ 
+Latitude[0] = 50.457233
+Latitude[1] = 50.395767
+Latitude[2] = 50.485611
+Latitude[3] = 50.423649
+Latitude[4] = 50.513947
+Latitude[5] = 50.451496
+Latitude[6] = 50.542248
+Latitude[7] = 50.479305
+Latitude[8] = 50.570507
+Latitude[9] = 50.507072
+*** PASS
+PASS test_nstride_cached (exit status: 0)
