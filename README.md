@@ -6,6 +6,7 @@
 cd netcdf
 tar -zxvf netcdf-c-4.8.1.tar.gz
 cd netcdf-c-4.8.1
+#
 # Building netcdf
 source build_env
 #
@@ -59,4 +60,8 @@ make: *** [check-recursive] Error 1
 ```
 tar -xvf sphinx-3.1.2.tar.xz
 cd sphinx-3.1.2
+#
+# Building sphinx
+source build_env
+CC=clang CXX=clang++ ./configure --disable-debug --enable-mkl --enable-mklfft --with-mklpath="$INTEL_MKL"/include:"$INTEL_MKL"/lib --with-numlibs=PWD/../netcdf/netcdf-c-4.8.1/install_dn --disable-openmp --disable-mpi --disable-numlibschecks --prefix="$PWD"/install_dn
 ```
