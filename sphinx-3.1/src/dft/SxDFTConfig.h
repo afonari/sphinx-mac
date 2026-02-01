@@ -18,4 +18,4 @@
 #define _SX_DFT_CONFIG_H_
 #endif
 /* compile package with mmm algorithm for projectors */
-#define USE_SXGEMMM /**/
+/* #undef USE_SXGEMMM */

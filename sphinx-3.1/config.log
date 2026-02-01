@@ -30,8 +30,8 @@ Kernel configured for up to 12 processors.
 Processor type: arm64e (ARM64E)
 Processors active: 0 1 2 3 4 5 6 7 8 9 10 11
 Primary memory available: 32.00 gigabytes
-Default processor set: 680 tasks, 4353 threads, 12 processors
-Load average: 3.59, Mach factor: 8.40
+Default processor set: 657 tasks, 4209 threads, 12 processors
+Load average: 4.89, Mach factor: 7.10
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -91,9 +91,7 @@ configure:2301: result: yes
 configure:2331: checking whether make supports nested variables
 configure:2349: result: yes
 configure:2516: configure sxaccelerate with /Users/fonari/src/sphinx-mac/sphinx-3.1/sxaccelerate/configure --disable-option-checking --with-sxmath  '--disable-debug' '--enable-mkl' '--enable-mklfft' '--with-mklpath=/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/include:/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/lib' '--with-numlibs=/Users/fonari/src/sphinx-mac/sphinx-3.1/../netcdf/netcdf-c-4.8.1/install_dn' '--disable-openmp' '--disable-mpi' '--disable-numlibschecks' '--prefix=/Users/fonari/src/sphinx-mac/sphinx-3.1/install_dn'
-configure:2518: error: Failed to configure sxaccelerate
 configure:2534: configure src with /Users/fonari/src/sphinx-mac/sphinx-3.1/src/configure --disable-option-checking --with-sxaccelerate=/Users/fonari/src/sphinx-mac/sphinx-3.1/sxaccelerate/src  '--disable-debug' '--enable-mkl' '--enable-mklfft' '--with-mklpath=/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/include:/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/lib' '--with-numlibs=/Users/fonari/src/sphinx-mac/sphinx-3.1/../netcdf/netcdf-c-4.8.1/install_dn' '--disable-openmp' '--disable-mpi' '--disable-numlibschecks' '--prefix=/Users/fonari/src/sphinx-mac/sphinx-3.1/install_dn'
-configure:2536: error: Failed to configure src
 configure:2684: checking that generated files are newer than configure
 configure:2690: result: done
 configure:2698: creating ./config.status

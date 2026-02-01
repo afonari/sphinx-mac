@@ -203,7 +203,7 @@ template<>
 inline SxComplex<double> SxComplex<double>::phase (double phi)
 {
    SxComplex<double> res;
-   sincos (phi, &res.im, &res.re);
+   __sincos (phi, &res.im, &res.re);
    return res;
 }
 
@@ -211,7 +211,7 @@ template<>
 inline SxComplex<float> SxComplex<float>::phase (float phi)
 {
    SxComplex<float> res;
-   sincosf (phi, &res.im, &res.re);
+   __sincosf (phi, &res.im, &res.re);
    return res;
 }
 

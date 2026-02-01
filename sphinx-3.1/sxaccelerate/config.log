@@ -30,8 +30,8 @@ Kernel configured for up to 12 processors.
 Processor type: arm64e (ARM64E)
 Processors active: 0 1 2 3 4 5 6 7 8 9 10 11
 Primary memory available: 32.00 gigabytes
-Default processor set: 683 tasks, 4360 threads, 12 processors
-Load average: 7.52, Mach factor: 5.60
+Default processor set: 660 tasks, 4212 threads, 12 processors
+Load average: 6.79, Mach factor: 5.20
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -118,7 +118,6 @@ on Y76X0Q4QHW-MBP
 config.status:748: creating Makefile
 configure:3826: === configuring in src (/Users/fonari/src/sphinx-mac/sphinx-3.1/sxaccelerate/src)
 configure:3887: running /bin/sh ./configure --disable-option-checking '--prefix=/Users/fonari/src/sphinx-mac/sphinx-3.1/install_dn'  '--with-sxmath' '--disable-debug' '--enable-mkl' '--enable-mklfft' '--with-mklpath=/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/include:/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/lib' '--with-numlibs=/Users/fonari/src/sphinx-mac/sphinx-3.1/../netcdf/netcdf-c-4.8.1/install_dn' '--disable-openmp' '--disable-mpi' '--disable-numlibschecks' --cache-file=/dev/null --srcdir=.
-configure:3892: error: ./configure failed for src
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -222,4 +221,18 @@ subdirs=' src'
 sysconfdir='${prefix}/etc'
 target_alias=''
 
-configure: exit 1
+## ----------- ##
+## confdefs.h. ##
+## ----------- ##
+
+/* confdefs.h */
+#define PACKAGE_NAME "SxAccelerate"
+#define PACKAGE_TARNAME "sxaccelerate"
+#define PACKAGE_VERSION "2.11.13"
+#define PACKAGE_STRING "SxAccelerate 2.11.13"
+#define PACKAGE_BUGREPORT "https://www.sxlib.de"
+#define PACKAGE_URL ""
+#define PACKAGE "sxaccelerate"
+#define VERSION "2.11.13"
+
+configure: exit 0

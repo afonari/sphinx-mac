@@ -30,8 +30,8 @@ Kernel configured for up to 12 processors.
 Processor type: arm64e (ARM64E)
 Processors active: 0 1 2 3 4 5 6 7 8 9 10 11
 Primary memory available: 32.00 gigabytes
-Default processor set: 683 tasks, 4373 threads, 12 processors
-Load average: 7.22, Mach factor: 5.73
+Default processor set: 663 tasks, 4248 threads, 12 processors
+Load average: 11.72, Mach factor: 4.87
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -829,7 +829,7 @@ configure:13057: checking for sincos
 configure:13057: clang -o conftest -Wall -O3 -march=native -fpermissive -flax-vector-conversions -pipe -Wno-variadic-macros -DNDEBUG -D_REENTRANT   conftest.c  -framework CoreFoundation -lm >&5
 Undefined symbols for architecture x86_64:
   "_sincos", referenced from:
-      _main in conftest-141c76.o
+      _main in conftest-0e2bb6.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13057: $? = 1
@@ -1833,9 +1833,458 @@ configure:26337: Adding include path /Users/fonari/src/sphinx-mac/sphinx-3.1/../
 configure:26345: Adding library path /Users/fonari/src/sphinx-mac/sphinx-3.1/../netcdf/netcdf-c-4.8.1/install_dn/lib
 configure:26370: checking for /Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/include/mkl.h
 configure:26385: result: yes
-configure:26395: checking for /Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/lib/libmkl_core.so
-configure:26410: result: no
-configure:26416: error: Cannot find Intel MKL.  Use the flag --with-mklpath to point to an MKL installation. Use --with-mklpath=<mkl include path>:<mkl lib path> for full flexibility.
+configure:26395: checking for /Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/lib/libmkl_core.dylib
+configure:26410: result: yes
+configure:27233: checking for dnrm2
+configure:27233: clang -o conftest -Wall -O3 -march=native -fpermissive -flax-vector-conversions -pipe -Wno-variadic-macros -DNDEBUG -D_REENTRANT  -I/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn/include -I/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/include -L/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/lib -Wl,-rpath,/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/lib  -L/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn/lib conftest.c -lmkl_intel_lp64 -lmkl_core -lmkl_sequential -ldl -ldl -lpthread -lm  -lm  -framework CoreFoundation -ldl -lpthread -lm  -framework CoreFoundation -ldl -lpthread >&5
+ld: warning: ignoring duplicate libraries: '-ldl', '-lm', '-lpthread'
+configure:27233: $? = 0
+configure:27233: result: yes
+configure:28202: checking for pcre2.h
+configure:28202: clang -c -Wall -O3 -march=native -fpermissive -flax-vector-conversions -pipe -Wno-variadic-macros -DNDEBUG -D_REENTRANT  -I/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn/include -I/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/include conftest.c >&5
+conftest.c:79:10: fatal error: 'pcre2.h' file not found
+   79 | #include <pcre2.h>
+      |          ^~~~~~~~~
+1 error generated.
+configure:28202: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "S/PHI/nX Accelerate Libraries"
+| #define PACKAGE_TARNAME "sxaccelerate"
+| #define PACKAGE_VERSION "2.11.13"
+| #define PACKAGE_STRING "S/PHI/nX Accelerate Libraries 2.11.13"
+| #define PACKAGE_BUGREPORT "https://www.sxlib.de"
+| #define PACKAGE_URL ""
+| #define PACKAGE "sxaccelerate"
+| #define VERSION "2.11.13"
+| #define WITH_APPS /**/
+| #define WITH_APPS /**/
+| #define USE_SXMATH /**/
+| #define USE_SXMATH /**/
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define SIZEOF_VOIDP 8
+| #define HAS_64BIT "1"
+| #define UNAME "Darwin"
+| #define PROCESSOR "x86_64"
+| #define WHOAMI "fonari"
+| #define GDB ""
+| #define MEMTRACER ""
+| #define THREADTRACER ""
+| #define DIST_OS "Darwin"
+| #define DIST_NAME "MacOSX"
+| #define DIST_VERSION ""
+| #define DIST_VERSION_L 0L 
+| #define DIST_MAJOR ""
+| #define DIST_MINOR ""
+| #define DIST_PATCH "0"
+| #define DIST_REPO_VER "."
+| #define PKG_TYPE "pkg"
+| #define REPOPROC "x86_64"
+| #define SXBINTARGET ""
+| #define SXACCELERATE_SRC "/Users/fonari/src/sphinx-mac/sphinx-3.1/sxaccelerate/src"
+| #define SXACCELERATE_BUILD "/Users/fonari/src/sphinx-mac/sphinx-3.1/sxaccelerate/src"
+| #define YYTEXT_POINTER 1
+| #define SXQDIR ""
+| #define USE_SX_LOG /**/
+| #define MACHINE_SPECIFIC /**/
+| #define MACOSX "1"
+| #define HAVE_ROUND 1
+| #define HAVE_LROUND 1
+| #define CXX "clang++"
+| #define CXXFLAGS "-Wall -O3 -march=native -fpermissive -flax-vector-conversions -pipe -Wno-variadic-macros -DNDEBUG -D_REENTRANT"
+| #define CXXVERSION "Apple clang version 16.0.0 (clang-1600.0.26.6)"
+| #define F77 ""
+| #define FFLAGS ""
+| #define HAVE_DLFCN_H 1
+| #define LT_OBJDIR ".libs/"
+| #define HAVE_SYS_WAIT_H 1
+| #define HAVE_ARPA_INET_H 1
+| #define HAVE_FCNTL_H 1
+| #define HAVE_NETDB_H 1
+| #define HAVE_NETINET_IN_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_SIGNAL_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_SYS_SOCKET_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_TIME_H 1
+| #define HAVE_SYS_WAIT_H 1
+| #define HAVE_SYS_RESOURCE_H 1
+| #define HAVE_UNISTD_H 1
+| #define USE_INTEL_MKL /**/
+| #define USE_MKL_FFT /**/
+| #define SXCOPYRIGHT "| S/PHI/nX utilizes the following 3rd-party libraries:\n|    - Intel MKL       http://software.intel.com/en-us/intel-mkl\n|    - Flex            http://flex.sourceforge.net\n|    - NetCDF          http://www.unidata.ucar.edu/software/netcdf\n"
+| /* end confdefs.h.  */
+| #define PCRE2_CODE_UNIT_WIDTH 8
+| 
+| #include <pcre2.h>
+configure:28202: result: no
+configure:28215: pcre2 will not be used
+configure:28246: checking for mkstemp
+configure:28246: clang -o conftest -Wall -O3 -march=native -fpermissive -flax-vector-conversions -pipe -Wno-variadic-macros -DNDEBUG -D_REENTRANT  -I/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn/include -I/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/include -L/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/lib -Wl,-rpath,/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/lib  -L/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn/lib conftest.c  -framework CoreFoundation -ldl -lpthread >&5
+configure:28246: $? = 0
+configure:28246: result: yes
+configure:28252: checking for posix_memalign
+configure:28252: clang -o conftest -Wall -O3 -march=native -fpermissive -flax-vector-conversions -pipe -Wno-variadic-macros -DNDEBUG -D_REENTRANT  -I/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn/include -I/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/include -L/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/lib -Wl,-rpath,/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/lib  -L/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn/lib conftest.c  -framework CoreFoundation -ldl -lpthread >&5
+configure:28252: $? = 0
+configure:28252: result: yes
+configure:28259: checking for clang options needed to detect all undeclared functions
+configure:28281: clang -c -Wall -O3 -march=native -fpermissive -flax-vector-conversions -pipe -Wno-variadic-macros -DNDEBUG -D_REENTRANT   -I/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn/include -I/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/include conftest.c >&5
+conftest.c:83:8: error: call to undeclared library function 'strchr' with type 'char *(const char *, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   83 | (void) strchr;
+      |        ^
+conftest.c:83:8: note: include the header <string.h> or explicitly provide a declaration for 'strchr'
+1 error generated.
+configure:28281: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "S/PHI/nX Accelerate Libraries"
+| #define PACKAGE_TARNAME "sxaccelerate"
+| #define PACKAGE_VERSION "2.11.13"
+| #define PACKAGE_STRING "S/PHI/nX Accelerate Libraries 2.11.13"
+| #define PACKAGE_BUGREPORT "https://www.sxlib.de"
+| #define PACKAGE_URL ""
+| #define PACKAGE "sxaccelerate"
+| #define VERSION "2.11.13"
+| #define WITH_APPS /**/
+| #define WITH_APPS /**/
+| #define USE_SXMATH /**/
+| #define USE_SXMATH /**/
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define SIZEOF_VOIDP 8
+| #define HAS_64BIT "1"
+| #define UNAME "Darwin"
+| #define PROCESSOR "x86_64"
+| #define WHOAMI "fonari"
+| #define GDB ""
+| #define MEMTRACER ""
+| #define THREADTRACER ""
+| #define DIST_OS "Darwin"
+| #define DIST_NAME "MacOSX"
+| #define DIST_VERSION ""
+| #define DIST_VERSION_L 0L 
+| #define DIST_MAJOR ""
+| #define DIST_MINOR ""
+| #define DIST_PATCH "0"
+| #define DIST_REPO_VER "."
+| #define PKG_TYPE "pkg"
+| #define REPOPROC "x86_64"
+| #define SXBINTARGET ""
+| #define SXACCELERATE_SRC "/Users/fonari/src/sphinx-mac/sphinx-3.1/sxaccelerate/src"
+| #define SXACCELERATE_BUILD "/Users/fonari/src/sphinx-mac/sphinx-3.1/sxaccelerate/src"
+| #define YYTEXT_POINTER 1
+| #define SXQDIR ""
+| #define USE_SX_LOG /**/
+| #define MACHINE_SPECIFIC /**/
+| #define MACOSX "1"
+| #define HAVE_ROUND 1
+| #define HAVE_LROUND 1
+| #define CXX "clang++"
+| #define CXXFLAGS "-Wall -O3 -march=native -fpermissive -flax-vector-conversions -pipe -Wno-variadic-macros -DNDEBUG -D_REENTRANT"
+| #define CXXVERSION "Apple clang version 16.0.0 (clang-1600.0.26.6)"
+| #define F77 ""
+| #define FFLAGS ""
+| #define HAVE_DLFCN_H 1
+| #define LT_OBJDIR ".libs/"
+| #define HAVE_SYS_WAIT_H 1
+| #define HAVE_ARPA_INET_H 1
+| #define HAVE_FCNTL_H 1
+| #define HAVE_NETDB_H 1
+| #define HAVE_NETINET_IN_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_SIGNAL_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_SYS_SOCKET_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_TIME_H 1
+| #define HAVE_SYS_WAIT_H 1
+| #define HAVE_SYS_RESOURCE_H 1
+| #define HAVE_UNISTD_H 1
+| #define USE_INTEL_MKL /**/
+| #define USE_MKL_FFT /**/
+| #define SXCOPYRIGHT "| S/PHI/nX utilizes the following 3rd-party libraries:\n|    - Intel MKL       http://software.intel.com/en-us/intel-mkl\n|    - Flex            http://flex.sourceforge.net\n|    - NetCDF          http://www.unidata.ucar.edu/software/netcdf\n"
+| #define HAVE_MKSTEMP 1
+| #define HAVE_POSIX_MEMALIGN 1
+| /* end confdefs.h.  */
+| 
+| int
+| main (void)
+| {
+| (void) strchr;
+|   ;
+|   return 0;
+| }
+configure:28308: clang -c -Wall -O3 -march=native -fpermissive -flax-vector-conversions -pipe -Wno-variadic-macros -DNDEBUG -D_REENTRANT   -I/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn/include -I/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/include conftest.c >&5
+configure:28308: $? = 0
+configure:28325: result: none needed
+configure:28339: checking whether strerror_r is declared
+configure:28339: clang -c -Wall -O3 -march=native -fpermissive -flax-vector-conversions -pipe -Wno-variadic-macros -DNDEBUG -D_REENTRANT   -I/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn/include -I/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/include conftest.c >&5
+configure:28339: $? = 0
+configure:28339: result: yes
+configure:28358: checking whether strerror_r returns char *
+configure:28383: clang -c -Wall -O3 -march=native -fpermissive -flax-vector-conversions -pipe -Wno-variadic-macros -DNDEBUG -D_REENTRANT  -I/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn/include -I/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/include conftest.c >&5
+conftest.c:87:13: error: indirection requires pointer operand ('int' invalid)
+   87 |           char x = *strerror_r (0, buf, sizeof buf);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+conftest.c:88:10: error: incompatible integer to pointer conversion initializing 'char *' with an expression of type 'int' [-Wint-conversion]
+   88 |           char *p = strerror_r (0, buf, sizeof buf);
+      |                 ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 errors generated.
+configure:28383: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "S/PHI/nX Accelerate Libraries"
+| #define PACKAGE_TARNAME "sxaccelerate"
+| #define PACKAGE_VERSION "2.11.13"
+| #define PACKAGE_STRING "S/PHI/nX Accelerate Libraries 2.11.13"
+| #define PACKAGE_BUGREPORT "https://www.sxlib.de"
+| #define PACKAGE_URL ""
+| #define PACKAGE "sxaccelerate"
+| #define VERSION "2.11.13"
+| #define WITH_APPS /**/
+| #define WITH_APPS /**/
+| #define USE_SXMATH /**/
+| #define USE_SXMATH /**/
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_UNISTD_H 1
+| #define STDC_HEADERS 1
+| #define SIZEOF_VOIDP 8
+| #define HAS_64BIT "1"
+| #define UNAME "Darwin"
+| #define PROCESSOR "x86_64"
+| #define WHOAMI "fonari"
+| #define GDB ""
+| #define MEMTRACER ""
+| #define THREADTRACER ""
+| #define DIST_OS "Darwin"
+| #define DIST_NAME "MacOSX"
+| #define DIST_VERSION ""
+| #define DIST_VERSION_L 0L 
+| #define DIST_MAJOR ""
+| #define DIST_MINOR ""
+| #define DIST_PATCH "0"
+| #define DIST_REPO_VER "."
+| #define PKG_TYPE "pkg"
+| #define REPOPROC "x86_64"
+| #define SXBINTARGET ""
+| #define SXACCELERATE_SRC "/Users/fonari/src/sphinx-mac/sphinx-3.1/sxaccelerate/src"
+| #define SXACCELERATE_BUILD "/Users/fonari/src/sphinx-mac/sphinx-3.1/sxaccelerate/src"
+| #define YYTEXT_POINTER 1
+| #define SXQDIR ""
+| #define USE_SX_LOG /**/
+| #define MACHINE_SPECIFIC /**/
+| #define MACOSX "1"
+| #define HAVE_ROUND 1
+| #define HAVE_LROUND 1
+| #define CXX "clang++"
+| #define CXXFLAGS "-Wall -O3 -march=native -fpermissive -flax-vector-conversions -pipe -Wno-variadic-macros -DNDEBUG -D_REENTRANT"
+| #define CXXVERSION "Apple clang version 16.0.0 (clang-1600.0.26.6)"
+| #define F77 ""
+| #define FFLAGS ""
+| #define HAVE_DLFCN_H 1
+| #define LT_OBJDIR ".libs/"
+| #define HAVE_SYS_WAIT_H 1
+| #define HAVE_ARPA_INET_H 1
+| #define HAVE_FCNTL_H 1
+| #define HAVE_NETDB_H 1
+| #define HAVE_NETINET_IN_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_SIGNAL_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_SYS_SOCKET_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_TIME_H 1
+| #define HAVE_SYS_WAIT_H 1
+| #define HAVE_SYS_RESOURCE_H 1
+| #define HAVE_UNISTD_H 1
+| #define USE_INTEL_MKL /**/
+| #define USE_MKL_FFT /**/
+| #define SXCOPYRIGHT "| S/PHI/nX utilizes the following 3rd-party libraries:\n|    - Intel MKL       http://software.intel.com/en-us/intel-mkl\n|    - Flex            http://flex.sourceforge.net\n|    - NetCDF          http://www.unidata.ucar.edu/software/netcdf\n"
+| #define HAVE_MKSTEMP 1
+| #define HAVE_POSIX_MEMALIGN 1
+| #define HAVE_DECL_STRERROR_R 1
+| #define HAVE_STRERROR_R 1
+| /* end confdefs.h.  */
+| #include <string.h>
+| int
+| main (void)
+| {
+| 
+| 	  char buf[100];
+| 	  char x = *strerror_r (0, buf, sizeof buf);
+| 	  char *p = strerror_r (0, buf, sizeof buf);
+| 	  return !p || x;
+| 
+|   ;
+|   return 0;
+| }
+configure:28392: result: no
+configure:28561: checking that generated files are newer than configure
+configure:28567: result: done
+configure:28683: creating ./config.status
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by S/PHI/nX Accelerate Libraries config.status 2.11.13, which was
+generated by GNU Autoconf 2.71.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status 
+
+on Y76X0Q4QHW-MBP
+
+config.status:1401: creating Makefile
+config.status:1401: creating nonstd/Makefile
+config.status:1401: creating util/Makefile
+config.status:1401: creating util/examples/Makefile
+config.status:1401: creating util/tests/Makefile
+config.status:1401: creating graph/Makefile
+config.status:1401: creating math/Makefile
+config.status:1401: creating math/examples/Makefile
+config.status:1401: creating math/tests/Makefile
+config.status:1401: creating math/benchmarks/Makefile
+config.status:1401: creating ipc/Makefile
+config.status:1401: creating ipc/tests/Makefile
+config.status:1401: creating ipc/examples/Makefile
+config.status:1401: creating ipc/examples/plugins/Makefile
+config.status:1401: creating fs/Makefile
+config.status:1401: creating fs/examples/Makefile
+config.status:1401: creating fs/tests/Makefile
+config.status:1401: creating parserkit/Makefile
+config.status:1401: creating parserkit/examples/Makefile
+config.status:1401: creating parserkit/examples/01_hello/Makefile
+config.status:1401: creating parserkit/examples/02_stateful_scanner/Makefile
+config.status:1401: creating parserkit/examples/03_unicode/Makefile
+config.status:1401: creating parserkit/examples/04_include_files/Makefile
+config.status:1401: creating parserkit/examples/05_parser_stack/Makefile
+config.status:1401: creating parserkit/examples/06_schema/Makefile
+config.status:1401: creating json/Makefile
+config.status:1401: creating json/examples/Makefile
+config.status:1401: creating io/Makefile
+config.status:1401: creating io/examples/Makefile
+config.status:1401: creating io/examples/plugins/Makefile
+config.status:1401: creating mpi/Makefile
+config.status:1401: creating mpi/examples/Makefile
+config.status:1401: creating apps/Makefile
+config.status:1401: creating apps/libexec/Makefile
+config.status:1401: creating apps/tests/Makefile
+config.status:1401: creating apps/tests/bin/Makefile
+config.status:1401: creating share/Makefile
+config.status:1401: creating share/manual/Makefile
+config.status:1401: creating share/manual/manual.sx
+config.status:1401: creating share/manual/preamble.a4paper.tex
+config.status:1401: creating share/manual/preamble.a5paper.tex
+config.status:1401: creating share/manual/title.a4paper.tex
+config.status:1401: creating share/manual/title.a5paper.tex
+config.status:1401: creating system/Makefile
+config.status:1401: creating system/sxwarnstat.pl
+config.status:1401: creating system/Doxyfile
+config.status:1401: creating gpu/Makefile
+config.status:1401: creating system/sxmake
+config.status:1401: creating util/SxUnixConfig.h
+config.status:1630: executing depfiles commands
+config.status:1707: cd nonstd       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd util       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd util/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd util/tests       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd graph       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd math       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd math/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd math/tests       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd math/benchmarks       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd ipc       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd ipc/tests       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd ipc/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd ipc/examples/plugins       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+/Users/fonari/src/sphinx-mac/sphinx-3.1/sxaccelerate/src/system/make.am.apps:56: warning: overriding commands for target `distclean'
+/var/folders/h8/y948pzrj75s93w8h3wp77wkw0000gq/T/GmvuCGCb:826: warning: ignoring old commands for target `distclean'
+config.status:1712: $? = 0
+config.status:1707: cd fs       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd fs/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd fs/tests       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd parserkit       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd parserkit/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd parserkit/examples/01_hello       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd parserkit/examples/02_stateful_scanner       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd parserkit/examples/03_unicode       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd parserkit/examples/04_include_files       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd parserkit/examples/05_parser_stack       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd parserkit/examples/06_schema       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd json       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd json/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd io       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd io/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd io/examples/plugins       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd mpi       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd mpi/examples       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd apps/libexec       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1707: cd apps/tests/bin       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+config.status:1712: $? = 0
+config.status:1630: executing libtool commands
+config.status:1630: executing chmodwarn commands
+config.status:1630: executing helper commands
+config.status:1630: executing sxmake commands
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -1844,6 +2293,7 @@ configure:26416: error: Cannot find Intel MKL.  Use the flag --with-mklpath to p
 ac_cv_build=aarch64-apple-darwin23.6.0
 ac_cv_c_bigendian=no
 ac_cv_c_compiler_gnu=yes
+ac_cv_c_undeclared_builtin_options='none needed'
 ac_cv_cxx_compiler_gnu=yes
 ac_cv_enable_acml=no
 ac_cv_enable_acmlfft=no
@@ -1907,16 +2357,22 @@ ac_cv_env_host_alias_value=
 ac_cv_env_target_alias_set=
 ac_cv_env_target_alias_value=
 ac_cv_file__Users_fonari_src_2026_2_schrodinger_buildenv_packages__pixi_envs_schrodinger_mkl_2020_0_166_include_mkl_h=yes
-ac_cv_file__Users_fonari_src_2026_2_schrodinger_buildenv_packages__pixi_envs_schrodinger_mkl_2020_0_166_lib_libmkl_core_so=no
+ac_cv_file__Users_fonari_src_2026_2_schrodinger_buildenv_packages__pixi_envs_schrodinger_mkl_2020_0_166_lib_libmkl_core_dylib=yes
+ac_cv_func_dnrm2=yes
 ac_cv_func_lround=yes
+ac_cv_func_mkstemp=yes
+ac_cv_func_posix_memalign=yes
 ac_cv_func_round=yes
 ac_cv_func_sincos=no
+ac_cv_func_strerror_r_char_p=no
+ac_cv_have_decl_strerror_r=yes
 ac_cv_header_arpa_inet_h=yes
 ac_cv_header_dlfcn_h=yes
 ac_cv_header_fcntl_h=yes
 ac_cv_header_inttypes_h=yes
 ac_cv_header_netdb_h=yes
 ac_cv_header_netinet_in_h=yes
+ac_cv_header_pcre2_h=no
 ac_cv_header_signal_h=yes
 ac_cv_header_stdint_h=yes
 ac_cv_header_stdio_h=yes
@@ -2080,7 +2536,7 @@ COND_GPU_FALSE=''
 COND_GPU_TRUE='#'
 COND_MPI_FALSE=''
 COND_MPI_TRUE='#'
-CPPFLAGS=' -I/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn/include'
+CPPFLAGS=' -I/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn/include -I/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/include'
 CP_A='/bin/cp -pR'
 CSCOPE='cscope'
 CTAGS='ctags'
@@ -2098,7 +2554,7 @@ CXX_PEDANTIC='-std=c++14 -pedantic -Wconversion -Wredundant-decls -Wno-long-long
 CXX_WARNING_IS_ERROR='-Werror -Wfatal-errors'
 CYGPATH_W='echo'
 DBG_MODE='no'
-DEFS=''
+DEFS='-DHAVE_CONFIG_H'
 DEPDIR='.deps'
 DIST_MAJOR=''
 DIST_MINOR=''
@@ -2134,14 +2590,14 @@ LATEX=''
 LD='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld'
 LDD='otool -L'
 LDD_AWK_COL='1'
-LDFLAGS=' -L/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn/lib'
+LDFLAGS='-L/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/lib -Wl,-rpath,/Users/fonari/src/2026-2/schrodinger_buildenv_packages/.pixi/envs/schrodinger/mkl-2020.0.166/lib  -L/Users/fonari/src/sphinx-mac/netcdf/netcdf-c-4.8.1/install_dn/lib'
 LEX='flex'
 LEXLIB=''
 LEX_CXXFLAGS='-Wno-conversion -Wno-redundant-decls -Wno-unused -Wno-unused-parameter -Wno-sign-compare'
 LEX_OUTPUT_ROOT='lex.yy'
 LIBEXT='dylib'
 LIBOBJS=''
-LIBS='-lm  -framework CoreFoundation -ldl -lpthread'
+LIBS=' -framework CoreFoundation -ldl -lpthread'
 LIBTOOL='$(SHELL) $(top_builddir)/libtool'
 LIPO='lipo'
 LN_S='ln -s'
@@ -2192,9 +2648,9 @@ SHELL='/bin/sh'
 STATIC_LIBC='no'
 STRIP='strip'
 SUBDIRS=''
-SXACCELERATE=''
-SXACCELERATE_BUILD=''
-SXACCELERATE_SRC=''
+SXACCELERATE='/Users/fonari/src/sphinx-mac/sphinx-3.1/install_dn'
+SXACCELERATE_BUILD='/Users/fonari/src/sphinx-mac/sphinx-3.1/sxaccelerate/src'
+SXACCELERATE_SRC='/Users/fonari/src/sphinx-mac/sphinx-3.1/sxaccelerate/src'
 SXBASE='$(abs_top_srcdir)'
 SXBINTARGET=''
 SXCLIDOC=''
@@ -2204,15 +2660,15 @@ SXPUBLISHER=''
 SXQDIR=''
 SXSTDDOC=''
 SXSTDVIM=''
-SX_BLAS_LIBS=' -lm  -framework CoreFoundation -ldl -lpthread'
+SX_BLAS_LIBS='-lmkl_intel_lp64 -lmkl_core -lmkl_sequential -ldl -ldl -lpthread -lm  -lm  -framework CoreFoundation -ldl -lpthread'
 SX_FFT_LIBS=''
-SX_NETCDF_LIBS=''
+SX_NETCDF_LIBS='-lnetcdf'
 SX_PARAM_ACML='no'
 SX_PARAM_ACMLFFT='no'
 SX_PARAM_ATLAS='no'
 SX_PARAM_FFTW='no'
-SX_PARAM_MKL='no'
-SX_PARAM_MKLFFT='no'
+SX_PARAM_MKL='yes'
+SX_PARAM_MKLFFT='yes'
 SX_PARAM_NETLIB='no'
 SX_PARAM_NUMLIBS=''
 SX_PARAM_SXMATH=''
@@ -2259,7 +2715,7 @@ ac_ct_MPICC=''
 ac_ct_MPICXX=''
 ac_ct_OBJCXX='clang++'
 am__EXEEXT_FALSE=''
-am__EXEEXT_TRUE=''
+am__EXEEXT_TRUE='#'
 am__fastdepCC_FALSE='#'
 am__fastdepCC_TRUE=''
 am__fastdepCXX_FALSE='#'
@@ -2283,7 +2739,7 @@ datadir='${datarootdir}'
 datarootdir='${prefix}/share'
 docdir='${datarootdir}/doc/${PACKAGE_TARNAME}'
 dvidir='${docdir}'
-exec_prefix='NONE'
+exec_prefix='${prefix}'
 host='aarch64-apple-darwin23.6.0'
 host_alias=''
 host_cpu='aarch64'
@@ -2389,5 +2845,9 @@ target_alias=''
 #define USE_INTEL_MKL /**/
 #define USE_MKL_FFT /**/
 #define SXCOPYRIGHT "| S/PHI/nX utilizes the following 3rd-party libraries:\n|    - Intel MKL       http://software.intel.com/en-us/intel-mkl\n|    - Flex            http://flex.sourceforge.net\n|    - NetCDF          http://www.unidata.ucar.edu/software/netcdf\n"
+#define HAVE_MKSTEMP 1
+#define HAVE_POSIX_MEMALIGN 1
+#define HAVE_DECL_STRERROR_R 1
+#define HAVE_STRERROR_R 1
 
-configure: exit 1
+configure: exit 0

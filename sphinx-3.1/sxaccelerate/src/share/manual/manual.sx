@@ -12,8 +12,8 @@ document {
    macros {
       sxcmdref {
          dirs {
-            cli = "/scratch/c.freysoldt/devel/sxdist/sxaccelerate/src/apps";
-            src = "/home/c.freysoldt/devel/sphinx/sxaccelerate/src/apps";
+            cli = "/Users/fonari/src/sphinx-mac/sphinx-3.1/sxaccelerate/src/apps";
+            src = "/Users/fonari/src/sphinx-mac/sphinx-3.1/sxaccelerate/src/apps";
          }
       }
    }
